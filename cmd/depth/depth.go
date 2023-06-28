@@ -12,7 +12,7 @@ import (
 
 	"github.com/goccy/go-graphviz"
 
-	"depth"
+	"github.com/KyleBanks/depth"
 )
 
 const (
