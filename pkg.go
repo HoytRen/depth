@@ -109,7 +109,7 @@ func (p *Pkg) addDep(i Importer, name string, srcDir string, isTest bool) {
 	dep.Resolve(i)
 
 	// if flag is set, doesn't include stdlib packages into the tree
-	if p.Tree.OutputStdLib && dep.Internal {
+	if !p.Tree.OutputStdLib && dep.Internal {
 		return
 	}
 
